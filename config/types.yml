@@ -1,0 +1,12 @@
+types:
+    sample:
+        package: github.com/dproject21/di_container_test/sampleinterface
+        type: SampleInterface
+        factory: NewSampleBar
+
+    printer:
+        package: github.com/dproject21/di_container_test/sampleinterface
+        type: SamplePrinter
+        factory: NewDefaultPrinter
+        arguments:
+          - "@sample"
